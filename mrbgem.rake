@@ -3,7 +3,7 @@ MRuby::Gem::Specification.new('mruby-arduino-neopixel') do |spec|
   spec.authors = 'Jun Takeda'
   spec.summary = 'NeoPixel library for mruby-arduino environment'
 
-  spec.add_dependency('mruby-arduino')
+  # spec.add_dependency('mruby-arduino')
 
   # Add compile flags
   # spec.cc.flags << '-g'
