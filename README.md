@@ -31,13 +31,15 @@ end
 ```mruby
 neo_pixel=NeoPixel.new
 
-neo_pixel.begin(6, 8)
+neo_pixel.begin(6, 8) # DIN pin = 6, Number of RGB LEDs in strip = 8
 
 neo_pixel.set_brightness(5)
 
-neo_pixel.set_pixel_color(0, 0, 0, 255)
-neo_pixel.set_pixel_color(1, 0, 255, 0)
-neo_pixel.set_pixel_color(2, 255, 0, 0)
+neo_pixel.clear
+
+neo_pixel.set_pixel_color(0, 0, 0, 255) # LED = 0 , R = 0, G = 0, B = 255
+neo_pixel.set_pixel_color(1, 0, 255, 0) # LED = 1 , R = 0, G = 255, B = 0
+neo_pixel.set_pixel_color(2, 255, 0, 0) # LED = 2 , R = 255, G = 0, B = 0
 
 neo_pixel.set_pixel_color(3, 0, 0, 255)
 neo_pixel.set_pixel_color(4, 0, 255, 0)
